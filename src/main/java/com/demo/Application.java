@@ -1,7 +1,7 @@
 package com.demo;
 
 import com.demo.domain.model.mybatis.gen.TUser;
-import com.demo.domain.repository.mybatis.TUserMapper;
+import com.demo.domain.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,13 +18,17 @@ import java.util.List;
 public class Application {
 
     @Autowired
-    TUserMapper tUserMapper;
+    UserService userService;
 
+    /**
+     * 测试
+     *
+     * @return
+     */
     @RequestMapping("/")
     public String home(){
-        List<TUser> tUsers = tUserMapper.selectAll();
-        System.out.println(tUsers.get(0).getName());
-        return "hello world!";
+        List<TUser> tUsers = userService.findAll();
+        return "hello world!\n" + (tUsers.isEmpty() ? "" : tUsers.get(0).getName());
     }
 
     public static void main(String args[]){

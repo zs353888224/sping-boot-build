@@ -1,14 +1,13 @@
 package com.demo.domain.repository.mybatis;
 
+import com.demo.domain.model.mybatis.gen.TUser;
 import com.demo.domain.repository.CrudMapper;
-import com.demo.domain.repository.MybatisMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * Created by zs on 16/10/24.
  */
-@MybatisMapper
-public interface TUserMapper extends CrudMapper<TUserMapper, Integer>{
-
-
+@Mapper
+public interface TUserMapper extends CrudMapper<TUser, Integer>{
 
 }

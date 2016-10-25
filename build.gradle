@@ -33,7 +33,11 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-starter-security")
 
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
     compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
+
+    compile("com.alibaba:druid:1.0.18")
+    compile("mysql:mysql-connector-java")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 
     //使用Mybatis-Generator自动生成Dao、Model、Mapping相关文件
@@ -41,6 +45,7 @@ dependencies {
     mybatisGenerator 'org.mybatis.generator:mybatis-generator-core:1.3.2'
     mybatisGenerator 'mysql:mysql-connector-java:5.1.38'
     mybatisGenerator 'tk.mybatis:mapper:3.3.2'
+
 }
 
 def getDbProperties = {

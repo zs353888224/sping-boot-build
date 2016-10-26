@@ -33,12 +33,13 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-starter-security")
 
-    compile("org.springframework.boot:spring-boot-starter-jdbc")
+//    compile("org.springframework.boot:spring-boot-starter-jdbc")
     compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
 
-    compile("com.alibaba:druid:1.0.18")
+//    compile("com.alibaba:druid:1.0.18")
     compile("mysql:mysql-connector-java")
     testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("org.springframework.security:spring-security-test")
 
     //使用Mybatis-Generator自动生成Dao、Model、Mapping相关文件
     //给mybatisGenerator插件用的jar包

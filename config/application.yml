@@ -29,6 +29,7 @@ mybatis:
 server:
     port: 2333
     context-path: '/wscq'
+    debug: 2334
 #    以下为设置https登录所用证书的加载, 个人证书签名命令:
 #    keytool -genkey -alias testkey2 -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
 #    ssl:
@@ -38,8 +39,5 @@ server:
 #        keyAlias: testkey2
 
 logging:
-    level:
-        root: info
-        sample:
-            mybatis:
-                mapper: TRACE
+    config: classpath:logbak.xml
+

@@ -33,11 +33,14 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-starter-security")
 
-//    compile("org.springframework.boot:spring-boot-starter-jdbc")
+    compile("mysql:mysql-connector-java")
     compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
 
+//    如果需要用druid做连接池, 可以使用以下配置, 并在配置文件中修改数据源配置
 //    compile("com.alibaba:druid:1.0.18")
-    compile("mysql:mysql-connector-java")
+//    compile("org.springframework.boot:spring-boot-starter-jdbc")
+
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("org.springframework.security:spring-security-test")
 

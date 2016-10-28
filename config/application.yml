@@ -1,0 +1,43 @@
+spring:
+    datasource:
+        name: wscq
+        url: jdbc:mysql://127.0.0.1:3306/wscq
+        username: root
+        password: zs12345
+        # 使用druid数据源
+#        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        filters: stat
+        maxActive: 20
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
+        schema: import.sql
+
+mybatis:
+    mapperLocations: classpath:mappers/*.xml
+    typeAliasesPackage: tk.mapper.model
+
+server:
+    port: 2333
+    context-path: '/wscq'
+    debug: 2334
+#    以下为设置https登录所用证书的加载, 个人证书签名命令:
+#    keytool -genkey -alias testkey2 -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+#    ssl:
+#        key-store: assets/keystore.p12
+#        key-store-password: test123
+#        keyStoreType: PKCS12
+#        keyAlias: testkey2
+
+logging:
+    config: classpath:logbak.xml
+

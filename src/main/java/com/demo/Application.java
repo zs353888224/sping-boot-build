@@ -28,7 +28,7 @@ public class Application {
     @RequestMapping("/")
     public String home(){
         List<TUser> tUsers = userService.findAll();
-        return "hello world!\n" + (tUsers.isEmpty() ? "" : tUsers.get(0).getName());
+        return "hello world! " + (tUsers.isEmpty() ? "" : tUsers.get(0).getName());
     }
 
     public static void main(String args[]){

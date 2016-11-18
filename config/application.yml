@@ -20,7 +20,7 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
-        schema: import.sql
+#        schema: import.sql
 
 mybatis:
     mapperLocations: classpath:mappers/*.xml
@@ -39,5 +39,6 @@ server:
 #        keyAlias: testkey2
 
 logging:
+    level.root: DEBUG
     config: classpath:logbak.xml
 

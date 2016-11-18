@@ -3,3 +3,6 @@
 application.properties
 testkey.keystore
 src/test/
+.gradle/
+.idea/
+logs/

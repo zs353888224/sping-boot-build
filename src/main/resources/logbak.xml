@@ -13,7 +13,7 @@
 
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- rollover daily 配置日志所生成的目录以及生成文件名的规则 -->
-            <fileNamePattern>logs/mylog-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/wscqlog-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- or whenever the file size reaches 64 MB -->
@@ -21,14 +21,12 @@
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
 
-
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>DEBUG</level>
         </filter>
         <!-- Safely log to the same file from multiple JVMs. Degrades performance! -->
         <prudent>true</prudent>
     </appender>
-
 
     <!-- Console output -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
@@ -45,7 +43,6 @@
             <level>INFO</level>
         </filter>
     </appender>
-
 
     <!-- Enable FILE and STDOUT appenders for all log messages.
          By default, only log at level INFO and above. -->

@@ -1,0 +1,24 @@
+spring:
+    datasource:
+        name: wscq
+        url: jdbc:mysql://127.0.0.1:3306/wscq
+        username: root
+        password: zs123456
+        driver-class-name: com.mysql.jdbc.Driver
+    redis:
+        host: localhost
+        password: root
+        port: 9799
+        timeout: 300
+    mvc:
+      static-path-pattern: /resources/**
+mybatis:
+    mapperLocations: classpath:mappers/*.xml
+    type-handlers-package: com.wscq.domain.repository.mybatis
+    type-aliases-package: com.wscq.domain.model.mybatis.gen
+server:
+    port: 2333
+    context-path: '/wscq'
+logging:
+    config: classpath:logbak.xml
+    level: debug

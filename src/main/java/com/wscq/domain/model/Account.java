@@ -1,4 +1,4 @@
-package com.demo.domain.model;
+package com.wscq.domain.model;
 
 import java.io.Serializable;
 

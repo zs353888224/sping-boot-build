@@ -1,7 +1,7 @@
-package com.demo.domain.repository.mybatis;
+package com.wscq.domain.repository.mybatis;
 
-import com.demo.domain.model.mybatis.gen.TUser;
-import com.demo.domain.repository.CrudMapper;
+import com.wscq.domain.model.mybatis.gen.TUser;
+import com.wscq.domain.repository.CrudMapper;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

@@ -1,6 +1,6 @@
-package com.demo.domain.service.security;
+package com.wscq.domain.service.security;
 
-import com.demo.domain.model.Account;
+import com.wscq.domain.model.Account;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
 

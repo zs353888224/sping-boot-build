@@ -1,4 +1,4 @@
-package com.demo.domain.repository;
+package com.wscq.domain.repository;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package com.demo.domain.service.user;
+package com.wscq.domain.service.user;
 
-import com.demo.domain.model.mybatis.gen.TUser;
-import com.demo.domain.repository.mybatis.TUserMapper;
+import com.wscq.domain.model.mybatis.gen.TUser;
+import com.wscq.domain.repository.mybatis.TUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

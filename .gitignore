@@ -6,3 +6,4 @@ src/test/
 .gradle/
 .idea/
 logs/
+assets

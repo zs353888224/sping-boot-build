@@ -1,4 +1,4 @@
-package com.demo.domain.model.mybatis.gen;
+package com.wscq.domain.model.mybatis.gen;
 
 public class TUser {
     /**

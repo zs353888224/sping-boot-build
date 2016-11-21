@@ -1,6 +1,6 @@
-package com.demo.domain.service.user;
+package com.wscq.domain.service.user;
 
-import com.demo.domain.model.mybatis.gen.TUser;
+import com.wscq.domain.model.mybatis.gen.TUser;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package com.wscq;
 
 import com.wscq.domain.model.mybatis.gen.TUser;
-import com.wscq.domain.service.user.UserService;
+import com.wscq.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.wscq.domain.service.security;
+package com.wscq.service.security;
 
 import com.wscq.domain.model.Account;
 import org.springframework.security.core.authority.AuthorityUtils;

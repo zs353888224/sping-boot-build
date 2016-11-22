@@ -1,9 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
-
-application.properties
-testkey.keystore
 src/test/
 .gradle/
 .idea/
 logs/
-assets
+assets/
+build/

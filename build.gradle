@@ -37,9 +37,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 
     /** 开发用热加载, 暂时效果未测试，应该需要设置某些参数才能在项目中使用 */
-    compile("org.springframework.boot:spring-boot-devtools"){
-
-    }
+    compile("org.springframework.boot:spring-boot-devtools")
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("org.springframework.security:spring-security-test")
@@ -50,6 +48,10 @@ dependencies {
     mybatisGenerator 'mysql:mysql-connector-java:5.1.38'
     mybatisGenerator 'tk.mybatis:mapper:3.3.2'
 
+}
+
+bootRun {
+    addResources = true
 }
 
 def getDbProperties = {

@@ -1,4 +1,4 @@
-package com.wscq.configuration;
+package com.wscq.domain.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;

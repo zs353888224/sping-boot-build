@@ -1,8 +1,7 @@
-package com.wscq.configuration;
+package com.wscq.domain.configuration;
 
-import com.wscq.domain.service.security.WscqUserDetailsService;
+import com.wscq.service.security.WscqUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

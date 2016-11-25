@@ -24,7 +24,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.antMatcher("/**")
                 .authorizeRequests()// 设置url的访问限制
-                    .antMatchers("/", "/home", "/public/**", "/index", "/resources/**")
+                    .antMatchers("/", "/home", "/public/**", "/index", "/js/**", "/img/**", "/css/**")
                     .permitAll()
                     .anyRequest()
                     .authenticated()

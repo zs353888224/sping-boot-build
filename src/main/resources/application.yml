@@ -10,8 +10,6 @@ spring:
         password: root
         port: 9799
         timeout: 300
-    mvc:
-      static-path-pattern: /resources/**
 mybatis:
     mapperLocations: classpath:mappers/*.xml
     type-handlers-package: com.wscq.domain.repository.mybatis
